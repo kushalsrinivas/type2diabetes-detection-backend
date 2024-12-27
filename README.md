@@ -45,15 +45,37 @@ Usage
 	•	Use a tool like Postman, cURL, or any HTTP client to interact with the API.
 	•	Example endpoint: /predict (replace with your actual endpoint if different).
 
-Directory Structure
 
-type2diabetes-detection-backend/
-│
-├── main.py                # Entry point for the FastAPI application
-├── models/                # Directory for machine learning models
-├── utils/                 # Utility functions
-├── requirements.txt       # Project dependencies
-└── README.md              # Documentation
+
+Usage
+
+Endpoint: /predict
+
+This endpoint takes in two input features and returns the prediction and confidence level for Type 2 diabetes detection.
+	•	Method: POST
+	•	URL: /predict
+	•	Request Body:
+```
+{
+    "Glucose": 150,
+    "BMI": 30.0
+}
+```
+
+	•	Response:
+```
+{
+    "prediction": 1,
+    "confidence": 0.5034146139916383
+}
+```
+
+	•	Explanation:
+	•	prediction: Indicates whether the patient is predicted to have Type 2 diabetes (1) or not (0).
+	•	confidence: A float value between 0 and 1, representing the confidence level of the prediction.
+
+
+
 
 Contributing
 
