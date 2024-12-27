@@ -55,22 +55,22 @@ This endpoint takes in two input features and returns the prediction and confide
 	•	Method: POST
 	•	URL: /predict
 	•	Request Body:
-```
+```bash
 {
     "Glucose": 150,
     "BMI": 30.0
 }
 ```
 
-	•	Response:
-```
+
+Response:
+```bash
 {
     "prediction": 1,
     "confidence": 0.5034146139916383
 }
 ```
-
-	•	Explanation:
+Explanation:
 	•	prediction: Indicates whether the patient is predicted to have Type 2 diabetes (1) or not (0).
 	•	confidence: A float value between 0 and 1, representing the confidence level of the prediction.
 
