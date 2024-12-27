@@ -35,10 +35,10 @@ Before running the project, ensure you have the following installed:
 Running the API
 
 To start the API server, run the following command:
-	```bash
-		uvicorn main:app --reload
-
-	•	The API will be available at: http://127.0.0.1:8000
+```bash
+uvicorn main:app --reload
+```
+The API will be available at: http://127.0.0.1:8000
 	•	The --reload option allows for hot-reloading during development.
 
 Usage
